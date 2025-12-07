@@ -47,6 +47,9 @@ docker/artifacts/
 **/docs/_build/*
 **/generated/*
 
+# Allow demo media in docs
+!docs/media/
+
 # Isaac-Sim packman
 _isaac_sim*
 _repo

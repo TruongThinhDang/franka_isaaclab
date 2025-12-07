@@ -27,6 +27,46 @@ This project implements three progressive manipulation tasks for the **Franka Em
 | **Lift** | Grasp and lift a cube to a target height | ⭐⭐ Intermediate | ✅ Completed |
 | **Stack** | Pick and stack multiple cubes on top of each other | ⭐⭐⭐ Advanced | ✅ Completed |
 
+## 🎬 Demo Videos
+
+### Task 1: Reach
+
+<div align="center">
+
+![Reach Task Demo](docs/media/reach_demo.gif)
+
+*The robot learns to move its end-effector to random target positions in 3D space*
+
+</div>
+
+### Task 2: Lift
+
+<div align="center">
+
+![Lift Task Demo](docs/media/lift_demo.gif)
+
+*The robot grasps and lifts a cube to a target height using learned grasping strategies*
+
+</div>
+
+### Task 3: Stack
+
+<div align="center">
+
+![Stack Task Demo](docs/media/stack_demo.gif)
+
+*The robot performs complex multi-object manipulation: picking cube 1 and stacking it on cube 2*
+
+</div>
+
+> **Note:** To add your demo videos:
+> 1. Create a `docs/media/` folder in your repository
+> 2. Record videos of your trained agents using OBS Studio or Isaac Sim's recording feature
+> 3. Convert videos to GIF format (recommended size: 800x600, max 10MB each) using tools like:
+>    - [ezgif.com](https://ezgif.com/video-to-gif) (online)
+>    - `ffmpeg -i input.mp4 -vf "fps=10,scale=800:-1:flags=lanczos" output.gif` (command line)
+> 4. Or use YouTube links: `[![Video Title](thumbnail.jpg)](https://youtube.com/watch?v=VIDEO_ID)`
+
 ## ✨ Features
 
 - **🤖 Custom Robot Environments**: Tailored configurations for Franka Panda robot
