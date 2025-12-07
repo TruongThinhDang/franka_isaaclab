@@ -5,9 +5,9 @@ This guide will help you create professional demo videos for your Franka robot m
 ## 🎯 Goal
 
 Create 3 GIF demos:
-- `reach_demo.gif` - Showing the robot reaching target positions
-- `lift_demo.gif` - Showing the robot grasping and lifting a cube
-- `stack_demo.gif` - Showing the robot stacking two cubes
+- `franka_reach.gif` - Showing the robot reaching target positions ✅ DONE
+- `franka_lift.gif` - Showing the robot grasping and lifting a cube ✅ DONE
+- `franka_stack.gif` - Showing the robot stacking two cubes ✅ DONE
 
 ## 📹 Step-by-Step Process
 
@@ -86,16 +86,16 @@ cd ~/Videos
 # Convert with high quality palette
 ffmpeg -i reach_demo.mp4 \
     -vf "fps=10,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
-    -loop 0 reach_demo.gif
+    -loop 0 franka_reach.gif
 
 # Repeat for lift and stack
 ffmpeg -i lift_demo.mp4 \
     -vf "fps=10,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
-    -loop 0 lift_demo.gif
+    -loop 0 franka_lift.gif
 
 ffmpeg -i stack_demo.mp4 \
     -vf "fps=10,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
-    -loop 0 stack_demo.gif
+    -loop 0 franka_stack.gif
 ```
 
 **Method 2: Using Online Tools**
@@ -125,10 +125,10 @@ If your GIF is larger than 10MB:
 sudo apt install gifsicle
 
 # Optimize
-gifsicle -O3 --colors 256 reach_demo.gif -o reach_demo_optimized.gif
+gifsicle -O3 --colors 256 franka_reach.gif -o franka_reach_optimized.gif
 
 # Or reduce colors further
-gifsicle -O3 --colors 128 reach_demo.gif -o reach_demo_optimized.gif
+gifsicle -O3 --colors 128 franka_reach.gif -o franka_reach_optimized.gif
 ```
 
 Or use online tool: [ezgif.com/optimize](https://ezgif.com/optimize)
@@ -137,10 +137,9 @@ Or use online tool: [ezgif.com/optimize](https://ezgif.com/optimize)
 
 ```bash
 # Copy your GIFs to the media folder
-cp ~/Videos/reach_demo.gif docs/media/
-cp ~/Videos/lift_demo.gif docs/media/
-cp ~/Videos/stack_demo.gif docs/media/
-cp ~/Videos/stack_demo.gif docs/media/
+cp ~/Videos/franka_reach.gif docs/media/
+cp ~/Videos/franka_lift.gif docs/media/
+cp ~/Videos/franka_stack.gif docs/media/
 ```
 
 ### Step 6: Verify and Commit
@@ -207,13 +206,13 @@ You can also add training performance plots:
 
 ## ✅ Checklist
 
-- [ ] Record reach task (10-30 seconds)
-- [ ] Record lift task (10-30 seconds)
-- [ ] Record stack task (10-30 seconds)
-- [ ] Convert all to GIF format
-- [ ] Optimize GIF sizes (< 10MB each)
-- [ ] Copy to `docs/media/`
-- [ ] Verify GIFs display in README
+- [x] Record reach task (10-30 seconds) ✅
+- [x] Record lift task (10-30 seconds) ✅
+- [x] Record stack task (10-30 seconds) ✅
+- [x] Convert all to GIF format ✅
+- [x] Optimize GIF sizes (< 10MB each) ✅
+- [x] Copy to `docs/media/` ✅
+- [ ] Verify GIFs display in README (will appear after push to GitHub)
 - [ ] Commit and push to GitHub
 - [ ] Check GitHub repo to ensure GIFs display correctly
 

@@ -4,9 +4,9 @@ This folder contains demo videos and GIFs for the project README.
 
 ## Required Files
 
-- `reach_demo.gif` - Demo of the reach task
-- `lift_demo.gif` - Demo of the lift task  
-- `stack_demo.gif` - Demo of the stack task
+- `franka_reach.gif` - Demo of the reach task ✅
+- `franka_lift.gif` - Demo of the lift task ✅
+- `franka_stack.gif` - Demo of the stack task ✅
 
 ## How to Create Demo Videos
 
@@ -83,22 +83,22 @@ If GIFs are too large, you can upload videos to YouTube and embed them:
 
 ## File Naming Convention
 
-- `reach_demo.gif` - Reach task demonstration
-- `lift_demo.gif` - Lift task demonstration
-- `stack_demo.gif` - Stack task demonstration
+- `franka_reach.gif` - Reach task demonstration ✅
+- `franka_lift.gif` - Lift task demonstration ✅
+- `franka_stack.gif` - Stack task demonstration ✅
 
 Optional additional media:
-- `reach_demo.mp4` - High quality video backup
-- `lift_demo.mp4` - High quality video backup
-- `stack_demo.mp4` - High quality video backup
+- `franka_reach.mp4` - High quality video backup
+- `franka_lift.mp4` - High quality video backup
+- `franka_stack.mp4` - High quality video backup
 - `training_curves.png` - TensorBoard training curves
 - `architecture_diagram.png` - System architecture
 
 ## Current Status
 
-- [ ] reach_demo.gif
-- [ ] lift_demo.gif
-- [ ] stack_demo.gif
+- [x] franka_reach.gif ✅ (2.2MB)
+- [x] franka_lift.gif ✅ (3.0MB)
+- [x] franka_stack.gif ✅ (2.0MB)
 
-Once you add these files, they will automatically appear in the main README.md!
+All demo files have been added successfully! They will now appear in the main README.md on GitHub.
 
